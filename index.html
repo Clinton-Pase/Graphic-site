@@ -18,62 +18,52 @@
 </head>
 
 <body>
+    <div class="site-container">
+
     <section class="first">
         <nav>
-            <label><img src="image-removebg-preview 12.png" class="nav-img"></label>
+            <label><img alt="site-logo" src="image-removebg-preview 12.png" class="nav-img"></label>
 
             <div class="nav-links">
 
-                <ul>
+                <ul id="menuList">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact us</a></li>
                 </ul>
-
-
+                <img alt="toggle-icon" src="icon-hamburger.png" class="time" onclick="toggleMenu()">
+            </div>
 
         </nav>
+
         <div class="explore">
             <h4>Graphics And<br> Illustration<br> World</h4>
 
-            <p>The best platform where you can get the<br> customized graphics and illustrations..</p>
+            <p>The best platform where you can get the<br> customized graphics and illustrations.</p>
 
             <button type="button" class="text-box">BUY NOW</button>
 
-
-
-            <img src="CAMERA2.png" class="feature-img">
-
-
+            <img alt="icon" src="CAMERA2.png" class="feature-img">
 
         </div>
 
-
-
-
     </section>
-
 
     <section class="second">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="About us page's image2.png">
+                <div class="div1">
+                    <img alt="glossy image" src="About us page's image2.png">
                 </div>
-                <div class="col-md-6">
-                    <h2>Unveiling<br> Creativity<br>
-                        Beyond Sight</h2>
+                <div class="div2">
+                    <h2>Unveiling Creativity<br>Beyond Sight</h2>
                     <p>Our Journey in Crafting Visual Wonders, We make<br> the best Graphics and Illustrations.</p>
-                    <a href="#">CONTINUE</a>
+                  <div class="but"> <button href="#">CONTINUE</button></div>
                 </div>
             </div>
-
         </div>
-
-
-
 
 
     </section>
@@ -83,10 +73,11 @@
             <h1 class="opinions">TESTIMONIALS</h1>
             <p class="subtitle">Read what people think about services and graphics </p>
             <div class="rows">
+
                 <div class="col-md-1">
                     <div class="service-box">
 
-                        <img src="Amena_Sabuwala__2_-removebg-preview 32.png">
+                        <img alt="icon" src="Amena_Sabuwala__2_-removebg-preview 32.png">
 
                         <h4>AMENA.S</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Sed non risus. Suspendisse<br>
@@ -96,9 +87,10 @@
                         <i class="fa fa-arrow-right"></i>
                     </div>
                 </div>
-                <div class="col-md-2">
+
+                <div class="col-md-1">
                     <div class="service-box">
-                        <img src="Amena_Sabuwala__2_-removebg-preview 32.png">
+                        <img alt="icon" src="Amena_Sabuwala__2_-removebg-preview 32.png">
                         <h4>AMENA.S</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Sed non risus. Suspendisse<br>
                             lectus tortor, dignissim sit amet, adipiscing<br> nec, ultricies sed, dolor. Cras
@@ -107,9 +99,10 @@
                         <i class="fa fa-arrow-right"></i>
                     </div>
                 </div>
-                <div class="col-md-3">
+
+                <div class="col-md-1">
                     <div class="service-box">
-                        <img src="Amena_Sabuwala__2_-removebg-preview 32.png">
+                        <img alt="icon" src="Amena_Sabuwala__2_-removebg-preview 32.png">
                         <h4>AMENA.S</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit. Sed non risus. Suspendisse<br>
                             lectus tortor, dignissim sit amet, adipiscing<br> nec, ultricies sed, dolor. Cras
@@ -129,13 +122,12 @@
 
             <div class="flow">
 
-
                 <div class="col-md-a">
                     <h2>Contact Us</h2>
                     <p>Send us a message</p>
                     <input type="text" name="name" placeholder="Full name" id="full" required>
                     <br> <input type="text" name="name" placeholder="Your email" id="email" required>
-                    <br> <input type="text" name="name" placeholder="Your Message.." id="mssg"  required>
+                    <br> <input type="text" name="name" placeholder="Your Message.." id="mssg" required>
                     <br> <button type="submit">Submit</button>
                 </div>
 
@@ -151,20 +143,19 @@
                     </ul>
                 </div>
 
-
                 <div class="col-md-c">
-                    <img src="image-removebg-preview 12.png">
-               <p>+2347057834651</p>
-               <p>+2347057834651</p>
+                    <img alt="icon" src="image-removebg-preview 12.png">
+                    <p>+2347057834651</p>
+                    <p>+2347057834651</p>
 
-               <div class="media">
-                <img src="instagram.png" id="ig">
-                <img src="facebook.png" id="fb">
-                <img src="twitter.png" id="twt">
-        
-              </div>
-        
-               
+                    <div class="media">
+                        <img alt="icon" src="instagram.png" id="ig">
+                        <img alt="icon" src="facebook.png" id="fb">
+                        <img alt="icon" src="twitter.png" id="twt">
+
+                    </div>
+
+
                 </div>
 
             </div>
@@ -172,14 +163,33 @@
         </div>
 
 
-
-
-
     </section>
 
     <div class="copy-right">
         <p class="cop">Made with &#10084; by PM </p>
     </div>
+
+</div>
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "290px";
+
+            }
+
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+
+        }
+
+
+    </script>
 
 </body>
 

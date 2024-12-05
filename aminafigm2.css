@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-
+.site-container{
+    max-width: 1300px;
+}
 
 body {
     background: #000235;
@@ -11,8 +13,9 @@ body {
 
 .first {
     width: 100%;
-    min-height: 100vh;
+    min-height: 110vh;
     position: relative;
+
 }
 
 
@@ -59,6 +62,9 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.time {
+    display: none;
+}
 
 .explore h4 {
     font-size: 75px;
@@ -72,9 +78,6 @@ nav ul li a:hover {
 
 }
 
-
-
-
 .explore p {
     color: #ffffff;
     font-size: 20px;
@@ -84,6 +87,7 @@ nav ul li a:hover {
 
 
 }
+
 
 
 .text-box {
@@ -108,33 +112,45 @@ nav ul li a:hover {
     width: 75vh;
     position: absolute;
     right: 11%;
-    top: 15%;
+    top: 19%;
     z-index: 2;
     height: 75vh;
-}
-
-@keyframes back {
-    100% {
-        background-position: 2000px 0;
-    }
 }
 
 
 .second {
     width: 100%;
-    min-height: 120vh;
-    position: relative;
+    min-height: 100vh;
+
 }
 
-.second img {
-    width: 146vh;
+.second .container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.second .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.div1 {
+    flex: 0 0 60%;
+    max-width: 65%;
+}
+
+
+.div1 img {
+    width: em;
     cursor: pointer;
-    margin-left: -320px;
+    margin-left: -420px;
     margin-top: 26px;
     height: 92vh;
 }
 
-.second h2 {
+.div2 h2 {
     margin-top: -450px;
     margin-left: 690px;
     font-size: 70px;
@@ -148,7 +164,7 @@ nav ul li a:hover {
 
 }
 
-.second p {
+.div2 p {
     margin-top: 3px;
     margin-bottom: 50px;
     color: #ffffff;
@@ -161,7 +177,7 @@ nav ul li a:hover {
     font-weight: 400;
 }
 
-.second a {
+.second button {
     width: 150px;
     margin-top: -35px;
     padding: 15px 10px;
@@ -177,19 +193,18 @@ nav ul li a:hover {
     font-family: "Outfit";
 }
 
-.second a:hover {
+.second button:hover {
     background: #171717;
     color: #fff;
 }
 
-.Third{
+.Third {
     width: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     position: relative;
 }
 
-
-.opinions{
+.opinions {
     text-align: center;
     font-size: 50px;
     color: #FFA500;
@@ -201,16 +216,13 @@ nav ul li a:hover {
 
 .subtitle {
     text-align: center;
-    margin-bottom: 70px;
-    font-size: 13px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
     color: #fff;
-    font-family: "Roboto";
     font-weight: lighter;
     letter-spacing: 0.8px;
 
 }
-
-
 
 .rows {
     display: flex;
@@ -219,14 +231,14 @@ nav ul li a:hover {
 }
 
 .service-box {
-    width: 300px;
+    width: 350px;
     cursor: pointer;
     margin-bottom: 65px;
     transition: .4s;
     background: #13124F;
-    margin-top: 90px;
+    margin-top: 5rem;
     border-radius: 20px;
-    height: 300px;
+    height: 330px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -259,96 +271,36 @@ nav ul li a:hover {
     font-size: 14px;
 }
 
-.col-md-2 img {
-    width: 50vh;
-    margin-top: -35px;
-    margin-left: -7px;
-
-}
-
-.col-md-2 h4 {
-    font-family: "Outfit";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-top: -35px;
-    color: #FFA500;
-
-}
-
-.col-md-2 p {
-    font-weight: 500;
-    margin-top: 10px;
-    text-align: center;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    font-size: 14px;
-}
-
-.col-md-3 img {
-    width: 50vh;
-    margin-top: -35px;
-    margin-bottom: 0px;
-    margin-left: -10px;
-
-    
-   
-  
-}
-
-.col-md-3 h4 {
-    font-family: "Outfit";
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-top: -35px;
-    color: #FFA500;
-
-}
-
-.col-md-3 p {
-    font-weight: 500;
-    margin-top: 10px;
-    text-align: center;
-    color: #ffffff;
-    letter-spacing: 0.5px;
-    font-size: 14px;
-}
-
 .fourth {
     width: 100%;
     min-height: 80vh;
-   
+
 }
 
-.flow{
+.flow {
     display: flex;
     align-items: center;
-    justify-content:space-evenly ;
-    
+    justify-content: space-evenly;
+
 }
 
-
-.col-md-a h2{
-    color:#FFA500 ;
+.col-md-a h2 {
+    color: #FFA500;
     font-size: 35px;
     margin-bottom: 5px;
     letter-spacing: 1.7px;
 }
 
-.col-md-a p{
+.col-md-a p {
     font-weight: 500;
     margin-top: 10px;
-    color:#afafaf ;
+    color: #afafaf;
     letter-spacing: 1.3px;
     font-size: 28px;
-margin-bottom: 10px;}
+    margin-bottom: 10px;
+}
 
-#full{
+#full {
     height: 24px;
     margin-bottom: 19px;
     border-radius: 10px;
@@ -356,14 +308,14 @@ margin-bottom: 10px;}
 }
 
 
-#email{
+#email {
     height: 24px;
     margin-bottom: 19px;
     border-radius: 10px;
     border: 10px solid white;
 }
 
-#mssg{
+#mssg {
     height: 44px;
     margin-bottom: 29px;
     border-radius: 10px;
@@ -371,33 +323,34 @@ margin-bottom: 10px;}
     width: 110%;
 }
 
-button{
+button {
     color: #000000;
     background-color: #FFA500;
-    padding: 8px  24px;
+    padding: 8px 24px;
     border-radius: 10px;
     border: 2px solid #FFA500;
 }
 
 
-.col-md-b h2{
-    color:#FFA500 ;
+.col-md-b h2 {
+    color: #FFA500;
     font-size: 35px;
     letter-spacing: 1.7px;
     margin-top: -72px;
 }
 
-.col-md-b p{
-    color:#afafaf ;
+.col-md-b p {
+    color: #afafaf;
     font-size: 25px;
     margin-top: 9px;
     letter-spacing: 1.7px;
-    margin-left:-12px ;
+    margin-left: -12px;
 
-margin-bottom: 45px;}
+    margin-bottom: 45px;
+}
 
 
-.col-md-b ul li{
+.col-md-b ul li {
     list-style: none;
     text-align: left;
     font-size: 27px;
@@ -405,13 +358,13 @@ margin-bottom: 45px;}
 }
 
 
-.col-md-c img{
-margin-top: -200px;
-margin-bottom: 10PX;
-width:100px;
+.col-md-c img {
+    margin-top: -200px;
+    margin-bottom: 10PX;
+    width: 100px;
 }
 
-.col-md-c p{
+.col-md-c p {
     color: #afafaf;
     font-size: 25px;
     margin-left: -30px;
@@ -420,48 +373,277 @@ width:100px;
 .fa {
     color: #fff;
     margin-left: 145px;
-margin-top: 8px;
-width: 15px;}
+    margin-top: 8px;
+    width: 15px;
+}
 
-.copy-right{
+.copy-right {
     height: 23px;
     background: #ffffff;
 }
 
-.cop{
+.cop {
     text-align: center;
-font-size: 15px;
+    font-size: 15px;
 }
 
 
-.media{
+.media {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -30px;
     margin-left: -35px;
-  
+
 }
 
-#ig{width:5vh;
-   height: 5vh;
+#ig {
+    width: 5vh;
+    height: 5vh;
     margin-left: 10px;
     cursor: pointer;
     margin-top: 60px;
 }
 
 
-#fb{
-    width:5vh;
+#fb {
+    width: 5vh;
     height: 5vh;
     margin-left: 15px;
     cursor: pointer;
     margin-top: 60px;
 }
-#twt{
-    width:5vh;
+
+#twt {
+    width: 5vh;
     height: 5vh;
     margin-left: 15px;
     cursor: pointer;
     margin-top: 60px;
+}
+
+@media screen and (max-width:43em) {
+
+    body {
+        background: #090540;
+    }
+
+    .nav-img {
+        margin-left: -20px;
+        width: clamp(80px, 40px, 120px);
+        margin-top: 20px;
+
+    }
+
+    nav ul {
+        width: 100%;
+        position: absolute;
+        background: linear-gradient(hsl(232, 91%, 18%), #190096);
+        top: 75px;
+        left: -2;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    nav ul li a::before {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        border: 2px solid #ffff;
+        padding: 8px 26px;
+        background: none;
+    }
+
+    .time {
+        display: block;
+        margin-left: 120px;
+        width: clamp(30px, 20px, 42px);
+    }
+
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+        left: 3px;
+    }
+
+    .explore img {
+        position: relative;
+        margin-left: 17rem;
+        margin-top: -3rem;
+        width: 50%;
+        height: 400px;
+    }
+
+    .explore br {
+        display: none;
+    }
+
+    .explore {
+        text-align: center;
+        margin-left: -10em;
+        margin-top: -1.5em;
+    }
+
+    .explore h4 {
+
+        font-size: clamp(3.3rem, 0.8rem, 4rem);
+        line-height: 4rem;
+    }
+
+    .explore button {
+        margin-top: 15px;
+        padding: 1rem 2rem;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column
+    }
+
+    .div1{
+        margin-left: 6.5rem;
+        margin-top: -6rem;
+        position: relative;
+    }
+.div1 img{
+    width:250%;
+    height: 220%;
+    margin-bottom: 7rem;
+    padding-left: 1rem;
+}
+
+    .div2{
+        margin-left: -43rem;
+        margin-top:20rem ;
+    position: relative; }
+
+    .div2 h2{
+        text-align: center;
+        font-size: clamp(3rem,0.9rem,2.5rem);
+        line-height: 3.2rem;
+        margin-bottom: 0.4em;
+    }
+
+    .div2 p{
+text-align: center;
+font-size:clamp(1.2rem,0.5em,1rem) ;
+    }
+
+    .but{
+        padding-left: 7rem;
+    
+     }
+
+    .Third .rows {
+        flex-direction: column;
+    }
+
+    .opinions {
+        font-size: clamp(1.9rem, 0.8rem, 2rem);
+        margin-top: -5rem;
+    }
+
+    .subtitle {
+        font-size: clamp(1rem, 0.5em, 2rem, );
+    }
+
+    .rows .col-md-1 {
+        margin-top: -4rem;
+        gap: -1rem;
+
+    }
+
+    .service-box {
+        max-width: 20rem;
+        max-height: 13rem;
+    }
+
+    .service-box h4 {
+        font-size: 1rem;
+    }
+
+    .service-box p {
+        font-size: 0.7rem;
+    }
+
+    .service-box img {
+        width: 43%;
+        margin-top: -5px;
+        margin-bottom: 9px;
+        margin-left: 90px;
+    }
+
+
+    .flow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-md-a {
+        margin-top: -2rem;
+    }
+
+    .col-md-a h2 {
+        font-size: clamp(1.6rem, 0.5rem, 2rem);
+        margin-bottom: -1rem;
+        text-align: center;
+    }
+
+    .col-md-a p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+.col-md-a button{
+    margin-left: 3rem;
+    
+}
+
+
+    .col-md-b h2 {
+        font-size: clamp(1.8rem, 0.5rem, 2rem);
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+
+    .col-md-b p {text-align: center;
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .col-md-b ul li {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .col-md-c {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+
+    .col-md-c img {
+        width: 55%;
+        margin-top: -1em;
+    }
+
+    .col-md-c p {
+        font-size: 1.1rem;
+        margin-left: -0.5rem;
+        color: #fff;
+        margin-bottom: em;
+    }
+
 }
